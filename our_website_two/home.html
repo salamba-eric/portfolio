@@ -14,9 +14,9 @@
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   </head>
   <body>
-    <div class="relative flex size-full min-h-screen flex-col bg-[#111418] dark group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#121416] dark group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
       <div class="layout-container flex h-full grow flex-col">
-        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#283039] px-10 py-3">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#2c3135] px-10 py-3">
           <div class="flex items-center gap-4 text-white">
             <div class="size-4">
               <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -30,14 +30,14 @@
           </div>
           <div class="flex flex-1 justify-end gap-8">
             <div class="flex items-center gap-9">
-              <a class="text-white text-sm font-medium leading-normal" href="#">Home</a>
-              <a class="text-white text-sm font-medium leading-normal" href="#">Services</a>
-              <a class="text-white text-sm font-medium leading-normal" href="#">Portfolio</a>
-              <a class="text-white text-sm font-medium leading-normal" href="#">About</a>
-              <a class="text-white text-sm font-medium leading-normal" href="#">Contact</a>
+              <a class="text-white text-sm font-medium leading-normal" href="home.html">Home</a>
+              <a class="text-white text-sm font-medium leading-normal" href="projects.html">Projects</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#values">About Us</a>
+              <a class="text-white text-sm font-medium leading-normal" href="members.html">Members</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#contacts">Contact</a>
             </div>
             <button
-              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#0c7ff2] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#dce8f3] text-[#121416] text-sm font-bold leading-normal tracking-[0.015em]"
             >
               <span class="truncate">Get a Quote</span>
             </button>
@@ -48,7 +48,7 @@
             <div class="@container">
               <div class="@[480px]:p-4">
                 <div
-                  class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-center justify-center p-4"
+                  class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-center justify-center p-4"
                   style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCVl3cvDHaIAgvxDefPxP9In9BDnQetRP-63uTHhr0a8-sEmaCUZkQimLuZQl9fSkeuKEsbEp_oKDqK1BpKDTkOEHC1MlRkBAlndSiTTK0QCH_H1mtPq8_RKs2_WSrNrhiFQl6sK7PKyl3JW9e9nfPtoUYdDektHQbUSuVsh3027CZu2FnUUGwKU_WLC5ioa4e4VyMYj9RQj_v0KXdzit--zxCL3ClIFa1f38QbywTUmAX0g5228Ehu3MfWtKtgLM2SRRXpPYaV9OA");'
                 >
                   <div class="flex flex-col gap-2 text-center">
@@ -63,20 +63,20 @@
                     </h2>
                   </div>
                   <button
-                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#0c7ff2] text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#dce8f3] text-[#121416] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
                   >
                     <span class="truncate">Explore Services</span>
                   </button>
                 </div>
               </div>
             </div>
-            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Our Core Values</h2>
+            <h2 id="values" class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 text-center w-full">Our Core Values</h2>
             <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4 text-center">
               At Haki Tech, we are driven by a set of core values that guide our work and ensure we deliver exceptional results for our clients. These values are the foundation of
               our success and the key to building lasting partnerships.
             </p>
             <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
-              <div class="flex flex-1 gap-3 rounded-lg border border-[#3b4754] bg-[#1b2127] p-4 flex-col">
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#40484f] bg-[#1e2124] p-4 flex-col">
                 <div class="text-white" data-icon="Code" data-size="24px" data-weight="regular">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
                     <path
@@ -86,12 +86,12 @@
                 </div>
                 <div class="flex flex-col gap-1">
                   <h2 class="text-white text-base font-bold leading-tight">Innovation</h2>
-                  <p class="text-[#9cabba] text-sm font-normal leading-normal">
+                  <p class="text-[#a2abb3] text-sm font-normal leading-normal">
                     We embrace creativity and cutting-edge technologies to develop innovative solutions that push boundaries and drive success.
                   </p>
                 </div>
               </div>
-              <div class="flex flex-1 gap-3 rounded-lg border border-[#3b4754] bg-[#1b2127] p-4 flex-col">
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#40484f] bg-[#1e2124] p-4 flex-col">
                 <div class="text-white" data-icon="Users" data-size="24px" data-weight="regular">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
                     <path
@@ -101,12 +101,12 @@
                 </div>
                 <div class="flex flex-col gap-1">
                   <h2 class="text-white text-base font-bold leading-tight">Client-Centric</h2>
-                  <p class="text-[#9cabba] text-sm font-normal leading-normal">
+                  <p class="text-[#a2abb3] text-sm font-normal leading-normal">
                     We prioritize our clients' needs, working closely with them to understand their goals and deliver solutions that exceed expectations.
                   </p>
                 </div>
               </div>
-              <div class="flex flex-1 gap-3 rounded-lg border border-[#3b4754] bg-[#1b2127] p-4 flex-col">
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#40484f] bg-[#1e2124] p-4 flex-col">
                 <div class="text-white" data-icon="ShieldCheck" data-size="24px" data-weight="regular">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
                     <path
@@ -116,12 +116,12 @@
                 </div>
                 <div class="flex flex-col gap-1">
                   <h2 class="text-white text-base font-bold leading-tight">Quality</h2>
-                  <p class="text-[#9cabba] text-sm font-normal leading-normal">
+                  <p class="text-[#a2abb3] text-sm font-normal leading-normal">
                     We are committed to the highest standards of quality in every project, ensuring reliability, performance, and user satisfaction.
                   </p>
                 </div>
               </div>
-              <div class="flex flex-1 gap-3 rounded-lg border border-[#3b4754] bg-[#1b2127] p-4 flex-col">
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#40484f] bg-[#1e2124] p-4 flex-col">
                 <div class="text-white" data-icon="Clock" data-size="24px" data-weight="regular">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
                     <path
@@ -131,136 +131,127 @@
                 </div>
                 <div class="flex flex-col gap-1">
                   <h2 class="text-white text-base font-bold leading-tight">Timeliness</h2>
-                  <p class="text-[#9cabba] text-sm font-normal leading-normal">
+                  <p class="text-[#a2abb3] text-sm font-normal leading-normal">
                     We deliver projects on time and within budget, maintaining clear communication and efficient processes throughout the development lifecycle.
                   </p>
                 </div>
               </div>
             </div>
-            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Our Specialties</h2>
-            <div class="p-4">
-              <div class="flex items-stretch justify-between gap-4 rounded-lg">
-                <div class="flex flex-col gap-1 flex-[2_2_0px]">
-                  <p class="text-white text-base font-bold leading-tight">Web Development</p>
-                  <p class="text-[#9cabba] text-sm font-normal leading-normal">
+            <h2 id="services" class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 text-center">Our Specialties</h2>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBbJbphuNyRz7uTwk91U91BRz5uCs9kslYMzwM8MS8MrEwiFaYor-MVuSSuwK-MNByQqnCewnKOeIp2EbZLLga89ZhApLd2ORY5LEJ9RQzxTiVD-u5h1tKVs7Ly9S2oTe7Zu_JlrIV8ZXsyam6gbTTa5mY28ULCXYJF5r8XU3A3MmX5SG9WlsmA__0nMAJsSnVkP5vq0eEsFWvF-EMZfl6AtF3EPNqAaExtlwgZMNEZXMzKP-f6VhwElmt9VZOL0y7ACM4hCY6E17E");'
+                ></div>
+                <div>
+                  <p class="text-white text-base font-medium leading-normal">Web Development</p>
+                  <p class="text-[#a2abb3] text-sm font-normal leading-normal">
                     Custom websites and web applications built with modern technologies and best practices. Includes responsive design, SEO optimization, performance focus, and
                     modern frameworks.
                   </p>
                 </div>
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBbJbphuNyRz7uTwk91U91BRz5uCs9kslYMzwM8MS8MrEwiFaYor-MVuSSuwK-MNByQqnCewnKOeIp2EbZLLga89ZhApLd2ORY5LEJ9RQzxTiVD-u5h1tKVs7Ly9S2oTe7Zu_JlrIV8ZXsyam6gbTTa5mY28ULCXYJF5r8XU3A3MmX5SG9WlsmA__0nMAJsSnVkP5vq0eEsFWvF-EMZfl6AtF3EPNqAaExtlwgZMNEZXMzKP-f6VhwElmt9VZOL0y7ACM4hCY6E17E");'
-                ></div>
               </div>
-            </div>
-            <div class="p-4">
-              <div class="flex items-stretch justify-between gap-4 rounded-lg">
-                <div class="flex flex-col gap-1 flex-[2_2_0px]">
-                  <p class="text-white text-base font-bold leading-tight">Mobile Apps</p>
-                  <p class="text-[#9cabba] text-sm font-normal leading-normal">
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAWDCo7saevv1CDH5XtR3q0-kFE6KqYqfoh4kLqBlPh0y0wg3mzGwkE3R0Nr1SzqyabZXpwpOup9tTGxfz-udiIxw7tFh8x2rLb6Q9KQ7cWlYfQ_lcNadQR8oB19_KMU6L1Fvm8Zy9_uQnrL1xmZ2HwLgx65oEUdS9YS_2y5buBgSQ24AJuTn4N_bvn6aVfmTugMZqD5sr_VMCUcvR6XoeGgD6xeM-Ho-pvSfvdtOYpGOYUNAq3TrbH_3MoJXQpdnHR0QhzJhiY0jM");'
+                ></div>
+                <div>
+                  <p class="text-white text-base font-medium leading-normal">Mobile Apps</p>
+                  <p class="text-[#a2abb3] text-sm font-normal leading-normal">
                     Native and cross-platform mobile applications for iOS and Android. Features intuitive UI/UX, robust functionality, and seamless integration with existing
                     systems.
                   </p>
                 </div>
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAWDCo7saevv1CDH5XtR3q0-kFE6KqYqfoh4kLqBlPh0y0wg3mzGwkE3R0Nr1SzqyabZXpwpOup9tTGxfz-udiIxw7tFh8x2rLb6Q9KQ7cWlYfQ_lcNadQR8oB19_KMU6L1Fvm8Zy9_uQnrL1xmZ2HwLgx65oEUdS9YS_2y5buBgSQ24AJuTn4N_bvn6aVfmTugMZqD5sr_VMCUcvR6XoeGgD6xeM-Ho-pvSfvdtOYpGOYUNAq3TrbH_3MoJXQpdnHR0QhzJhiY0jM");'
-                ></div>
               </div>
-            </div>
-            <div class="p-4">
-              <div class="flex items-stretch justify-between gap-4 rounded-lg">
-                <div class="flex flex-col gap-1 flex-[2_2_0px]">
-                  <p class="text-white text-base font-bold leading-tight">Desktop Apps</p>
-                  <p class="text-[#9cabba] text-sm font-normal leading-normal">
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCph2lnzcEn05N8fuerz27D-uaO5KLoW7LK_9Qoj8lMEVAAYsJfbGJbGi2LtgfP2tGtwAkX5urlMChwXSbwq-_1IJjOsJ1qCZSw2AsMQ0pobvtmCDp4Ilhhfqqdk4MBau0nw-fWvZL7E-ETZFdlwsIjowbLAuFvxT-xBdGpypUOc0F-Kh6tth5ghIsXstOOh75WVc08V5y_dMxpau25RBLoFNapcUzqWuEe56Vfhko67Iblab0QLEzpZsOSDKco7n-IonTG1xeDD2g");'
+                ></div>
+                <div>
+                  <p class="text-white text-base font-medium leading-normal">Desktop Apps</p>
+                  <p class="text-[#a2abb3] text-sm font-normal leading-normal">
                     Cross-platform desktop applications tailored to your business needs. Includes user-friendly interfaces, efficient performance, and compatibility with multiple
                     operating systems.
                   </p>
                 </div>
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCph2lnzcEn05N8fuerz27D-uaO5KLoW7LK_9Qoj8lMEVAAYsJfbGJbGi2LtgfP2tGtwAkX5urlMChwXSbwq-_1IJjOsJ1qCZSw2AsMQ0pobvtmCDp4Ilhhfqqdk4MBau0nw-fWvZL7E-ETZFdlwsIjowbLAuFvxT-xBdGpypUOc0F-Kh6tth5ghIsXstOOh75WVc08V5y_dMxpau25RBLoFNapcUzqWuEe56Vfhko67Iblab0QLEzpZsOSDKco7n-IonTG1xeDD2g");'
-                ></div>
               </div>
-            </div>
-            <div class="p-4">
-              <div class="flex items-stretch justify-between gap-4 rounded-lg">
-                <div class="flex flex-col gap-1 flex-[2_2_0px]">
-                  <p class="text-white text-base font-bold leading-tight">Game Development</p>
-                  <p class="text-[#9cabba] text-sm font-normal leading-normal">
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC7l-IHMuSEPxqs2tL4mpmabRR--59kwQZLkfL2tCMaofm33ob5JwijTfprBOsFunYmzL6g4wWaU80MJqjaf2vHYvP-ohJ4T7iGGmZaYYoOjUNA0P2S7Od1pJtamfkk9_IBSgcan-o7CMkC_u5JKdcXsb0XGxvkACPZ0GUBQxwAwP56CThQkC5S7K0uNAlkDDrrvyO86fQzVQRbbrnzYqYibKTY4E_5oaMbtsIwKRN9b4oqKvbBsGCz4ZxWWBKJ5rf_uUuA2UGw3k0");'
+                ></div>
+                <div>
+                  <p class="text-white text-base font-medium leading-normal">Game Development</p>
+                  <p class="text-[#a2abb3] text-sm font-normal leading-normal">
                     Engaging and immersive games for various platforms, from mobile to PC. Focus on captivating gameplay, stunning visuals, and optimized performance.
                   </p>
                 </div>
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC7l-IHMuSEPxqs2tL4mpmabRR--59kwQZLkfL2tCMaofm33ob5JwijTfprBOsFunYmzL6g4wWaU80MJqjaf2vHYvP-ohJ4T7iGGmZaYYoOjUNA0P2S7Od1pJtamfkk9_IBSgcan-o7CMkC_u5JKdcXsb0XGxvkACPZ0GUBQxwAwP56CThQkC5S7K0uNAlkDDrrvyO86fQzVQRbbrnzYqYibKTY4E_5oaMbtsIwKRN9b4oqKvbBsGCz4ZxWWBKJ5rf_uUuA2UGw3k0");'
-                ></div>
               </div>
-            </div>
-            <div class="p-4">
-              <div class="flex items-stretch justify-between gap-4 rounded-lg">
-                <div class="flex flex-col gap-1 flex-[2_2_0px]">
-                  <p class="text-white text-base font-bold leading-tight">UI/UX Design</p>
-                  <p class="text-[#9cabba] text-sm font-normal leading-normal">
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDzNq6yId0MNdoiOP85Ot-rspEO1dtAzhjjC6Oof7CxYouU8jtZu_ZvaXeriOiizpEn80E7Rls89-DqLVJ3tdpHaGa0EyI6CJLQesbp8_GmNJqVmm_91y-G8AS3eNZzVPHfLub3LbY6ZJmOMomCt6ZJjrUQ76FPVuTYezBQT2cNAUnxu44-ZQqNTeRUSxFEFwSNU6xH3l1ocL9fx_WtXK5arL5nnZHd1veVLcgzYUthmgklCs8YwvgWSSZi-qELyxmw-xL7AKhqV6o");'
+                ></div>
+                <div>
+                  <p class="text-white text-base font-medium leading-normal">UI/UX Design</p>
+                  <p class="text-[#a2abb3] text-sm font-normal leading-normal">
                     User-centered design solutions that enhance user experience and drive engagement. Includes wireframing, prototyping, user testing, and visual design.
                   </p>
                 </div>
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDzNq6yId0MNdoiOP85Ot-rspEO1dtAzhjjC6Oof7CxYouU8jtZu_ZvaXeriOiizpEn80E7Rls89-DqLVJ3tdpHaGa0EyI6CJLQesbp8_GmNJqVmm_91y-G8AS3eNZzVPHfLub3LbY6ZJmOMomCt6ZJjrUQ76FPVuTYezBQT2cNAUnxu44-ZQqNTeRUSxFEFwSNU6xH3l1ocL9fx_WtXK5arL5nnZHd1veVLcgzYUthmgklCs8YwvgWSSZi-qELyxmw-xL7AKhqV6o");'
-                ></div>
               </div>
-            </div>
-            <div class="p-4">
-              <div class="flex items-stretch justify-between gap-4 rounded-lg">
-                <div class="flex flex-col gap-1 flex-[2_2_0px]">
-                  <p class="text-white text-base font-bold leading-tight">Graphic Design</p>
-                  <p class="text-[#9cabba] text-sm font-normal leading-normal">
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCNMNYNBMeKWvQXO3KFkx0Ox2GF2oUKGZruNz99K-q7UcS_PxTI_7kdkHbt-6q7gn88lT9QCU4PHKBm51NdksefoccrezGjECyAsH62UnfhBt_1OROg9ZU80jKR3MXqFz-RO7aVUkkgquzki8Dh0I-cyrJZcu01PpmIW8s5klIAH4mammNSemFHA9D1EAu_Xrk0ToKjOGg-wgZzdbJ1zELyDTTQWTTT5_zdPquq1f3BHKDNTrjmOWhpabevO5p7dG7YHMwzXD4lLxg");'
+                ></div>
+                <div>
+                  <p class="text-white text-base font-medium leading-normal">Graphic Design</p>
+                  <p class="text-[#a2abb3] text-sm font-normal leading-normal">
                     Visually appealing graphics and branding materials that communicate your message effectively. Includes logo design, brand guidelines, marketing collateral, and
                     illustrations.
                   </p>
                 </div>
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCNMNYNBMeKWvQXO3KFkx0Ox2GF2oUKGZruNz99K-q7UcS_PxTI_7kdkHbt-6q7gn88lT9QCU4PHKBm51NdksefoccrezGjECyAsH62UnfhBt_1OROg9ZU80jKR3MXqFz-RO7aVUkkgquzki8Dh0I-cyrJZcu01PpmIW8s5klIAH4mammNSemFHA9D1EAu_Xrk0ToKjOGg-wgZzdbJ1zELyDTTQWTTT5_zdPquq1f3BHKDNTrjmOWhpabevO5p7dG7YHMwzXD4lLxg");'
-                ></div>
               </div>
             </div>
           </div>
         </div>
         <footer class="flex justify-center">
           <div class="flex max-w-[960px] flex-1 flex-col">
-            <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
-              <div class="flex flex-wrap justify-center gap-4">
+            <p id="contacts" class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 text-center"> Contact Us </p>
+            <footer class="flex flex-col gap-6 px-5 py-10 text-center @container border-t border-solid border-t-[#2c3135]">
+                <div class="flex flex-wrap justify-center gap-4">
                 <a href="#">
-                  <div class="text-[#9cabba]" data-icon="TwitterLogo" data-size="24px" data-weight="regular">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                      <path
-                        d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"
-                      ></path>
-                    </svg>
+                  <div class="text-[#a2abb3]" data-icon="TwitterLogo" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                    d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"
+                    ></path>
+                  </svg>
                   </div>
                 </a>
                 <a href="#">
-                  <div class="text-[#9cabba]" data-icon="InstagramLogo" data-size="24px" data-weight="regular">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                      <path
-                        d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"
-                      ></path>
-                    </svg>
+                  <div class="text-[#a2abb3]" data-icon="InstagramLogo" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                    d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"
+                    ></path>
+                  </svg>
                   </div>
                 </a>
                 <a href="#">
-                  <div class="text-[#9cabba]" data-icon="LinkedinLogo" data-size="24px" data-weight="regular">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                      <path
-                        d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"
-                      ></path>
-                    </svg>
+                  <div class="text-[#a2abb3]" data-icon="LinkedinLogo" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                    d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"
+                    ></path>
+                  </svg>
                   </div>
                 </a>
-              </div>
-              <p class="text-[#9cabba] text-base font-normal leading-normal">© 2024 Haki Tech. All rights reserved.</p>
+                </div>
+              <p class="text-[#a2abb3] text-base font-normal leading-normal">&copy; 2024 Haki Tech. All rights reserved.</p>
             </footer>
           </div>
         </footer>
