@@ -54,6 +54,12 @@ function renderProjects() {
       <p class="text-white text-base font-medium leading-normal">${project.name}</p>
       <p class="text-[#9cabba] text-sm font-normal leading-normal">${project.description}</p>
       </div>
+      <p class="text-white text-sm font-medium leading-normal">${project.category}:</p>
+      <div class="flex justfy-center items-center gap-1 flex-wrap">
+        ${project.tools.map(tool => `
+          <p class ="bg-[#606060] rounded-xl p-2 text-white text-xs font-normal leading-normal">${tool}</p>
+        `).join("")}
+      </div>
     `;
     card.style.maxWidth = "300px";
     card.style.width = "100%";

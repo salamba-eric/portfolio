@@ -3,7 +3,7 @@ const members = [
   {
     name: "Sophia Bennett",
     title: "CTO",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBh9HLOdbSA7e-Sx2jjkVjtw0eKU-xn6lNDul3rvMfA8IAZigZo9FMJb9hKIA6svBKAE5FJQK1fGBaP9-ixcND2_XBAIPtu-RSsgrkxAHiy_n-oZVhl7nlYOtEOz0KBRdgFbteT_6_M1ZTfMwSlU13j09W2pnH38marKzwVNCPaxQusUDXbSpr4PLQxLn2Y67vgdV5VYscVHgVZqpezYz_uKZlHJo2ZgG1NSFiX8-EIQIsYSAKUH7I-vdH6wTJvyw34M_f-DYW6L2I",
+    image: "../resume/image_1.jpg",
     description: "Sophia oversees the technical direction, ensuring cutting-edge solutions and maintaining high standards of quality.",
     link: "",
     specialties: ["Architecture", "Innovation"]
@@ -28,15 +28,20 @@ function createMemberCard(member) {
 
 card.innerHTML = `
     <div class="px-4">
-        <div
-            class="bg-center bg-no-repeat aspect-square bg-cover rounded-full"
-            style="background-image: url('${member.image}'); width: 150px; height: 150px; max-width: 150px; max-height: 150px; margin: 0 auto;"
-        ></div>
+      <div
+        class="bg-center bg-no-repeat aspect-square bg-cover rounded-full"
+        style="background-image: url('${member.image}'); width: 150px; height: 150px; max-width: 150px; max-height: 150px; margin: 0 auto;"
+      ></div>
     </div>
-    <div>
-        <p class="text-white text-base font-medium leading-normal">${member.name}</p>
-        <p class="text-[#9cabba] text-sm font-normal leading-normal">${member.title}</p>
-        <p class="text-[#9cabba] text-sm font-normal leading-normal">${member.description}</p>
+    <div class="flex flex-col items-center">
+      <p class="text-white text-base font-medium leading-normal">${member.name}</p>
+      <p class="text-[#9cabba] text-sm font-normal leading-normal">${member.title}</p>
+      <p class="text-[#9cabba] text-sm font-normal leading-normal">${member.description}</p>
+    <p class="mt-5">Specialties:</p>
+    <div class="flex justfy-center items-center gap-1 flex-wrap mt-1">
+      ${member.specialties.map(specialty => `
+        <p class ="bg-[#606060] rounded-xl p-2 text-white text-xs font-normal leading-normal">${specialty}</p>
+      `).join("")}
     </div>
 `;
 
