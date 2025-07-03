@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"name": "__profile",
+			"path": "."
+		},
+		{
+			"name": "portfolio",
+			"path": "public/portfolio"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "__profile",
+		"livePreview.defaultPreviewPath": "",
+		"livePreview.showServerStatusNotifications": false,
+		"livePreview.tasks.runTaskWithExternalPreview": false,
+		"livePreview.serverRoot": "",
+		"liveServer.settings.useLocalIp": true
+	},
+	"extensions": {
+		"recommendations": [
+			"ritwickdey.liveserver"
+		]
+	}
+}

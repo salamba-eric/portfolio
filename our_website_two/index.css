@@ -1,12 +1,23 @@
-/* From Uiverse.io by JustCode14 */ 
+/* From Uiverse.io by JustCode14 */
+/* Light Mode Styles */
+html.light {
+  --bg-color: #f5f5dc; /* Off-white */
+  --text-color: #4f4f4f; /* Grey */
+  --accent-color: #800080; /* Purple */
+  --header-border-color: #d3d3d3; /* Light grey border */
+  --card-bg-color: #ffffff; /* White background for cards */
+  --card-border-color: #e0e0e0; /* Light grey border for cards */
+  --link-color: #800080; /* Purple for links */
+}
+
 /* Theme Switch */
 /* The switch - the box around the slider */
 .switch {
-  font-size: 17px;
+  font-size: 14px; /* Reduced font size to indirectly affect em units */
   position: relative;
   display: inline-block;
-  width: 4em;
-  height: 2.2em;
+  width: 3em; /* Reduced width */
+  height: 1.7em; /* Reduced height */
   border-radius: 30px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -17,6 +28,7 @@
   width: 0;
   height: 0;
 }
+
 
 /* The slider */
 .slider {
@@ -35,11 +47,11 @@
 .slider:before {
   position: absolute;
   content: "";
-  height: 1.2em;
-  width: 1.2em;
+  height: 1em; /* Adjusted height */
+  width: 1em; /* Adjusted width */
   border-radius: 20px;
-  left: 0.5em;
-  bottom: 0.5em;
+  left: 0.4em; /* Adjusted position */
+  bottom: 0.35em; /* Adjusted position */
   transition: 0.4s;
   transition-timing-function: cubic-bezier(0.81, -0.04, 0.38, 1.5);
   box-shadow: inset 8px -4px 0px 0px #fff;
@@ -50,7 +62,7 @@
 }
 
 .switch input:checked + .slider:before {
-  transform: translateX(1.8em);
+  transform: translateX(1.3em); /* Adjusted translation */
   box-shadow: inset 15px -4px 0px 15px #ffcf48;
 }
 
@@ -58,24 +70,24 @@
   background-color: #fff;
   border-radius: 50%;
   position: absolute;
-  width: 5px;
+  width: 4px; /* Adjusted size */
   transition: all 0.4s;
-  height: 5px;
+  height: 4px; /* Adjusted size */
 }
 
 .star_1 {
-  left: 2.5em;
-  top: 0.5em;
+  left: 2em; /* Adjusted position */
+  top: 0.4em; /* Adjusted position */
 }
 
 .star_2 {
-  left: 2.2em;
-  top: 1.2em;
+  left: 1.8em; /* Adjusted position */
+  top: 0.9em; /* Adjusted position */
 }
 
 .star_3 {
-  left: 3em;
-  top: 0.9em;
+  left: 2.4em; /* Adjusted position */
+  top: 0.7em; /* Adjusted position */
 }
 
 .switch input:checked ~ .slider .star {
@@ -83,10 +95,10 @@
 }
 
 .cloud {
-  width: 3.5em;
+  width: 2.5em; /* Adjusted size */
   position: absolute;
-  bottom: -1.4em;
-  left: -1.1em;
+  bottom: -1em; /* Adjusted position */
+  left: -0.8em; /* Adjusted position */
   opacity: 0;
   transition: all 0.4s;
 }
