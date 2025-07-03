@@ -7,6 +7,7 @@
       onload="this.rel='stylesheet'"
       href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
     />
+    <link rel="stylesheet" href="index.css" />
 
     <title>Stitch Design</title>
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
@@ -14,10 +15,10 @@
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   </head>
   <body>
-    <div class="relative flex size-full min-h-screen flex-col bg-[#111418] dark group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
+    <div class="relative flex size-full min-h-screen flex-col theme-container group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
       <div class="layout-container flex h-full grow flex-col">
-        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#283039] px-10 py-3">
-          <div class="flex items-center gap-4 text-white">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid px-10 py-3">
+          <div class="flex items-center gap-4">
             <div class="size-4">
               <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -26,17 +27,18 @@
                 ></path>
               </svg>
             </div>
-            <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Haki Tech</h2>
+            <h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Haki Tech</h2>
+            <div id="toggle_theme"></div>
           </div>
           <div class="flex flex-1 justify-end gap-8">
             <div class="flex items-center gap-9">
-              <a class="text-white text-sm font-medium leading-normal" href="home.html">Home</a>
-              <a class="text-white text-sm font-medium leading-normal" href="projects.html">Projects</a>
-              <a class="text-white text-sm font-medium leading-normal" href="members.html">Members</a>
-              <a class="text-white text-sm font-medium leading-normal" href="#contacts">Contact</a>
+              <a class="text-sm font-medium leading-normal" href="home.html">Home</a>
+              <a class="text-sm font-medium leading-normal" href="projects.html">Projects</a>
+              <a class="text-sm font-medium leading-normal" href="members.html">Members</a>
+              <a class="text-sm font-medium leading-normal" href="#contacts">Contact</a>
             </div>
             <button
-              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#0c7ff2] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 text-sm font-bold leading-normal tracking-[0.015em]"
             >
               <span class="truncate">Get a Quote</span>
             </button>
@@ -46,8 +48,8 @@
           <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
             <div class="flex flex-wrap justify-between gap-3 p-4">
               <div class="flex min-w-72 flex-col gap-3">
-                <p class="text-white tracking-light text-[32px] font-bold leading-tight">Our Projects</p>
-                <p class="text-[#9cabba] text-sm font-normal leading-normal">
+                <p class="tracking-light text-[32px] font-bold leading-tight">Our Projects</p>
+                <p class="text-sm font-normal leading-normal">
                   Explore our portfolio of successful software solutions, showcasing our expertise and commitment to delivering impactful results for our clients.
                 </p>
               </div>

@@ -1,36 +1,118 @@
-/* From Uiverse.io by JustCode14 */
-/* Light Mode Styles */
-html.light {
-  --bg-color: #f5f5dc; /* Off-white */
-  --text-color: #4f4f4f; /* Grey */
-  --accent-color: #800080; /* Purple */
-  --header-border-color: #d3d3d3; /* Light grey border */
-  --card-bg-color: #ffffff; /* White background for cards */
-  --card-border-color: #e0e0e0; /* Light grey border for cards */
-  --link-color: #800080; /* Purple for links */
+/* Define CSS variables for colors */
+[data-theme="dark"] {
+  --main-bg-color: #121416;
+  --main-text-color: #ffffff;
+  --header-border-color: #2c3135;
+  --button-bg-color: #dce8f3;
+  --button-text-color: #121416;
+  --card-bg-color: #1e2124;
+  --card-border-color: #40484f;
+  --secondary-text-color: #a2abb3;
+  --accent-color: #00a6ff; 
+  --icon-color: #ffffff;
+  --item-hover-color: #ffffff; /* Unified hover color for both specialty and value items */
 }
 
-/* Theme Switch */
-/* The switch - the box around the slider */
-.switch {
-  font-size: 14px; /* Reduced font size to indirectly affect em units */
+[data-theme="light"] {
+  --main-bg-color: #FAFAFA;
+  --main-text-color: #2D3748;
+  --header-border-color: #E5E7EB;
+  --button-bg-color: #9370DB;
+  --button-text-color: #FFFFFF;
+  --card-bg-color: #FFFFFF;
+  --card-border-color: #E5E7EB;
+  --secondary-text-color: #6B7280;
+  --accent-color: #9370DB;
+  --icon-color: #FFD700; /* for the sun */
+  --item-hover-color: #9370DB; /* Unified hover color for both specialty and value items */
+}
+
+/* Apply colors using variables */
+body, .theme-container {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+}
+header, footer {
+  border-color: var(--header-border-color) !important;
+}
+h1, h2, h3, h4, h5, h6, p, a {
+  color: var(--main-text-color);
+}
+.layout-content-container p {
+    color: var(--secondary-text-color);
+}
+button {
+  background-color: var(--button-bg-color) !important;
+  color: var(--button-text-color) !important;
+}
+.grid > div.flex-col {
+  background-color: var(--card-bg-color);
+  border-color: var(--card-border-color) !important;
+}
+footer p, footer svg {
+  color: var(--secondary-text-color) !important;
+}
+
+/* Common styles for specialty and value items */
+.specialty-item, .value-item {
+  background-color: var(--card-bg-color);
+  border: 1px solid var(--card-border-color);
+  padding: 1em;
+  border-radius: 0.5em;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.specialty-item:hover, .value-item:hover {
+  transform: scale(1.03);
+  /* The color property here affects the *parent* div's text color. */
+  /* We need to target h2 specifically for its color change on parent hover. */
+}
+
+.specialty-item h2, .value-item h2 {
   position: relative;
   display: inline-block;
-  width: 3em; /* Reduced width */
-  height: 1.7em; /* Reduced height */
-  border-radius: 30px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: var(--main-text-color); /* Ensure default h2 color is theme-aware */
+  transition: color 0.3s ease-in-out; /* Smooth transition for h2 color */
 }
 
-/* Hide default HTML checkbox */
+/* Change h2 color when parent is hovered */
+.specialty-item:hover h2, .value-item:hover h2 {
+  color: var(--item-hover-color);
+}
+
+.specialty-item h2:after, .value-item h2:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: var(--item-hover-color);
+  transition: width 0.3s ease-in-out;
+}
+
+/* Trigger underline when parent is hovered */
+.specialty-item:hover h2:after, .value-item:hover h2:after {
+  width: 100%;
+  left: 0;
+}
+
+/* --- Theme Switch --- */
+.switch {
+  font-size: 11px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em; 
+  height: 2em; 
+  border-radius: 2em;
+}
 .switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
-
-
-/* The slider */
 .slider {
   position: absolute;
   cursor: pointer;
@@ -38,71 +120,43 @@ html.light {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #2a2a2a;
+  background-color: #4A5568; /* Grey track */
   transition: 0.4s;
-  border-radius: 30px;
-  overflow: hidden;
+  border-radius: 2em;
+  display: flex;
+  align-items: center;
 }
 
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 1em; /* Adjusted height */
-  width: 1em; /* Adjusted width */
-  border-radius: 20px;
-  left: 0.4em; /* Adjusted position */
-  bottom: 0.35em; /* Adjusted position */
-  transition: 0.4s;
-  transition-timing-function: cubic-bezier(0.81, -0.04, 0.38, 1.5);
-  box-shadow: inset 8px -4px 0px 0px #fff;
+/* Base styles for both icons */
+.slider svg {
+    position: absolute;
+    transition: all 0.4s;
+    height: 1.4em;
+    width: 1.4em;
+    color: var(--icon-color);
 }
 
-.switch input:checked + .slider {
-  background-color: #00a6ff;
+.moon {
+    left: 0.3em;
+    opacity: 1; /* Visible by default (dark mode) */
 }
 
-.switch input:checked + .slider:before {
-  transform: translateX(1.3em); /* Adjusted translation */
-  box-shadow: inset 15px -4px 0px 15px #ffcf48;
+.sun {
+    right: 0.3em;
+    opacity: 0; /* Hidden by default (dark mode) */
 }
 
-.star {
-  background-color: #fff;
-  border-radius: 50%;
-  position: absolute;
-  width: 4px; /* Adjusted size */
-  transition: all 0.4s;
-  height: 4px; /* Adjusted size */
-}
-
-.star_1 {
-  left: 2em; /* Adjusted position */
-  top: 0.4em; /* Adjusted position */
-}
-
-.star_2 {
-  left: 1.8em; /* Adjusted position */
-  top: 0.9em; /* Adjusted position */
-}
-
-.star_3 {
-  left: 2.4em; /* Adjusted position */
-  top: 0.7em; /* Adjusted position */
-}
-
-.switch input:checked ~ .slider .star {
+/* On CHECK (Light Mode) */
+.switch input:checked + .slider .moon {
+  transform: translateX(1.5em);
   opacity: 0;
 }
-
-.cloud {
-  width: 2.5em; /* Adjusted size */
-  position: absolute;
-  bottom: -1em; /* Adjusted position */
-  left: -0.8em; /* Adjusted position */
-  opacity: 0;
-  transition: all 0.4s;
-}
-
-.switch input:checked ~ .slider .cloud {
+.switch input:checked + .slider .sun {
+  transform: translateX(0);
   opacity: 1;
+}
+/* This empty :before pseudo-element is no longer needed for shapes */
+.slider:before {
+    content: "";
+    display: none;
 }

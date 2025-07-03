@@ -15,10 +15,10 @@
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   </head>
   <body>
-    <div class="relative flex size-full min-h-screen flex-col bg-[#121416] dark group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
+    <div class="relative flex size-full min-h-screen flex-col theme-container group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
       <div class="layout-container flex h-full grow flex-col">
-        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#2c3135] px-10 py-3">
-          <div class="flex items-center gap-4 text-white">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid px-10 py-3">
+          <div class="flex items-center gap-4">
             <div class="size-4">
               <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -27,19 +27,19 @@
                 ></path>
               </svg>
             </div>
-            <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Haki Tech</h2>
+            <h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Haki Tech</h2>
             <div id="toggle_theme"></div>
           </div>
           <div class="flex flex-1 justify-end gap-8">
             <div class="flex items-center gap-9">
-              <a class="text-white text-sm font-medium leading-normal" href="home.html">Home</a>
-              <a class="text-white text-sm font-medium leading-normal" href="projects.html">Projects</a>
-              <a class="text-white text-sm font-medium leading-normal" href="#values">About Us</a>
-              <a class="text-white text-sm font-medium leading-normal" href="members.html">Members</a>
-              <a class="text-white text-sm font-medium leading-normal" href="#contacts">Contact</a>
+              <a class="text-sm font-medium leading-normal" href="home.html">Home</a>
+              <a class="text-sm font-medium leading-normal" href="projects.html">Projects</a>
+              <a class="text-sm font-medium leading-normal" href="#values">About Us</a>
+              <a class="text-sm font-medium leading-normal" href="members.html">Members</a>
+              <a class="text-sm font-medium leading-normal" href="#contacts">Contact</a>
             </div>
             <button
-              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#dce8f3] text-[#121416] text-sm font-bold leading-normal tracking-[0.015em]"
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 text-sm font-bold leading-normal tracking-[0.015em]"
             >
               <span class="truncate">Get a Quote</span>
             </button>
@@ -55,31 +55,31 @@
                 >
                   <div class="flex flex-col gap-2 text-center">
                     <h1
-                      class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
+                      class="text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
                     >
                       The Right Tech at Your Fingertips
                     </h1>
-                    <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                    <h2 class="text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
                       Haki Tech is a software solutions company dedicated to providing innovative and reliable technology solutions tailored to meet your unique needs. We
-                      specialize in a wide range of services, from web and mobile development to UI/UX design and game development, ensuring your vision becomes a reality.
+                      specialized in a wide range of services, from web and mobile development to UI/UX design and game development, ensuring your vision becomes a reality.
                     </h2>
                   </div>
                   <button
-                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#dce8f3] text-[#121416] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
                   >
                     <span class="truncate">Explore Services</span>
                   </button>
                 </div>
               </div>
             </div>
-            <h2 id="values" class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 text-center w-full">Our Core Values</h2>
-            <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4 text-center">
+            <h2 id="values" class="text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 text-center w-full">Our Core Values</h2>
+            <p class="text-base font-normal leading-normal pb-3 pt-1 px-4 text-center">
               At Haki Tech, we are driven by a set of core values that guide our work and ensure we deliver exceptional results for our clients. These values are the foundation of
               our success and the key to building lasting partnerships.
             </p>
             <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
-              <div class="flex flex-1 gap-3 rounded-lg border border-[#40484f] bg-[#1e2124] p-4 flex-col">
-                <div class="text-white" data-icon="Code" data-size="24px" data-weight="regular">
+              <div class="flex flex-1 gap-3 rounded-lg border p-4 flex-col value-item">
+                <div class="" data-icon="Code" data-size="24px" data-weight="regular">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
                     <path
                       d="M69.12,94.15,28.5,128l40.62,33.85a8,8,0,1,1-10.24,12.29l-48-40a8,8,0,0,1,0-12.29l48-40a8,8,0,0,1,10.24,12.3Zm176,27.7-48-40a8,8,0,1,0-10.24,12.3L227.5,128l-40.62,33.85a8,8,0,1,0,10.24,12.29l48-40a8,8,0,0,0,0-12.29ZM162.73,32.48a8,8,0,0,0-10.25,4.79l-64,176a8,8,0,0,0,4.79,10.26A8.14,8.14,0,0,0,96,224a8,8,0,0,0,7.52-5.27l64-176A8,8,0,0,0,162.73,32.48Z"
@@ -87,14 +87,14 @@
                   </svg>
                 </div>
                 <div class="flex flex-col gap-1">
-                  <h2 class="text-white text-base font-bold leading-tight">Innovation</h2>
-                  <p class="text-[#a2abb3] text-sm font-normal leading-normal">
+                  <h2 class="text-base font-bold leading-tight pb-3">Innovation</h2>
+                  <p class="text-sm font-normal leading-normal">
                     We embrace creativity and cutting-edge technologies to develop innovative solutions that push boundaries and drive success.
                   </p>
                 </div>
               </div>
-              <div class="flex flex-1 gap-3 rounded-lg border border-[#40484f] bg-[#1e2124] p-4 flex-col">
-                <div class="text-white" data-icon="Users" data-size="24px" data-weight="regular">
+              <div class="flex flex-1 gap-3 rounded-lg border p-4 flex-col value-item">
+                <div class="" data-icon="Users" data-size="24px" data-weight="regular">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
                     <path
                       d="M117.25,157.92a60,60,0,1,0-66.5,0A95.83,95.83,0,0,0,3.53,195.63a8,8,0,1,0,13.4,8.74,80,80,0,0,1,134.14,0,8,8,0,0,0,13.4-8.74A95.83,95.83,0,0,0,117.25,157.92ZM40,108a44,44,0,1,1,44,44A44.05,44.05,0,0,1,40,108Zm210.14,98.7a8,8,0,0,1-11.07-2.33A79.83,79.83,0,0,0,172,168a8,8,0,0,1,0-16,44,44,0,1,0-16.34-84.87,8,8,0,1,1-5.94-14.85,60,60,0,0,1,55.53,105.64,95.83,95.83,0,0,1,47.22,37.71A8,8,0,0,1,250.14,206.7Z"
@@ -102,14 +102,14 @@
                   </svg>
                 </div>
                 <div class="flex flex-col gap-1">
-                  <h2 class="text-white text-base font-bold leading-tight">Client-Centric</h2>
-                  <p class="text-[#a2abb3] text-sm font-normal leading-normal">
+                  <h2 class="text-base font-bold leading-tight pb-3">Client-Centric</h2>
+                  <p class="text-sm font-normal leading-normal">
                     We prioritize our clients' needs, working closely with them to understand their goals and deliver solutions that exceed expectations.
                   </p>
                 </div>
               </div>
-              <div class="flex flex-1 gap-3 rounded-lg border border-[#40484f] bg-[#1e2124] p-4 flex-col">
-                <div class="text-white" data-icon="ShieldCheck" data-size="24px" data-weight="regular">
+              <div class="flex flex-1 gap-3 rounded-lg border p-4 flex-col value-item">
+                <div class="" data-icon="ShieldCheck" data-size="24px" data-weight="regular">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
                     <path
                       d="M208,40H48A16,16,0,0,0,32,56v58.78c0,89.61,75.82,119.34,91,124.39a15.53,15.53,0,0,0,10,0c15.2-5.05,91-34.78,91-124.39V56A16,16,0,0,0,208,40Zm0,74.79c0,78.42-66.35,104.62-80,109.18-13.53-4.51-80-30.69-80-109.18V56H208ZM82.34,141.66a8,8,0,0,1,11.32-11.32L112,148.68l50.34-50.34a8,8,0,0,1,11.32,11.32l-56,56a8,8,0,0,1-11.32,0Z"
@@ -117,14 +117,14 @@
                   </svg>
                 </div>
                 <div class="flex flex-col gap-1">
-                  <h2 class="text-white text-base font-bold leading-tight">Quality</h2>
-                  <p class="text-[#a2abb3] text-sm font-normal leading-normal">
+                  <h2 class="text-base font-bold leading-tight pb-3">Quality</h2>
+                  <p class="text-sm font-normal leading-normal">
                     We are committed to the highest standards of quality in every project, ensuring reliability, performance, and user satisfaction.
                   </p>
                 </div>
               </div>
-              <div class="flex flex-1 gap-3 rounded-lg border border-[#40484f] bg-[#1e2124] p-4 flex-col">
-                <div class="text-white" data-icon="Clock" data-size="24px" data-weight="regular">
+              <div class="flex flex-1 gap-3 rounded-lg border p-4 flex-col value-item">
+                <div class="" data-icon="Clock" data-size="24px" data-weight="regular">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
                     <path
                       d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm64-88a8,8,0,0,1-8,8H128a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v48h48A8,8,0,0,1,192,128Z"
@@ -132,86 +132,86 @@
                   </svg>
                 </div>
                 <div class="flex flex-col gap-1">
-                  <h2 class="text-white text-base font-bold leading-tight">Timeliness</h2>
-                  <p class="text-[#a2abb3] text-sm font-normal leading-normal">
+                  <h2 class="text-base font-bold leading-tight pb-3">Timeliness</h2>
+                  <p class="text-sm font-normal leading-normal">
                     We deliver projects on time and within budget, maintaining clear communication and efficient processes throughout the development lifecycle.
                   </p>
                 </div>
               </div>
             </div>
-            <h2 id="services" class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 text-center">Our Specialties</h2>
+            <h2 id="services" class="text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 text-center w-full">Our Specialties</h2>
             <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
-              <div class="flex flex-col gap-3 pb-3">
+              <div class="flex flex-col gap-3 pb-3 rounded-lg border p-4 specialty-item">
                 <div
                   class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBbJbphuNyRz7uTwk91U91BRz5uCs9kslYMzwM8MS8MrEwiFaYor-MVuSSuwK-MNByQqnCewnKOeIp2EbZLLga89ZhApLd2ORY5LEJ9RQzxTiVD-u5h1tKVs7Ly9S2oTe7Zu_JlrIV8ZXsyam6gbTTa5mY28ULCXYJF5r8XU3A3MmX5SG9WlsmA__0nMAJsSnVkP5vq0eEsFWvF-EMZfl6AtF3EPNqAaExtlwgZMNEZXMzKP-f6VhwElmt9VZOL0y7ACM4hCY6E17E");'
+                  style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBbJbphuNyRz7uTwk91U91BRz5uCs9kslYMzwM8MS8MrEwiFaYor-MVuSSuwK-MNByQqnCewnKOeIp2EbZLLga89ZhApLd2ORY5LEJ9RQzxTiVD-u5h1tKVs7Ly9S2oTe2Zu_JlrIV8ZXsyam6gbTTa5mY28ULCXYJF5r8XU3A3MmX5SG9WlsmA__0nMAJsSnVkP5vq0eEsFWvF-EMZfl6AtF3EPNqAaExtlwgZMNEZXMzKP-f6VhwElmt9VZOL0y7ACM4hCY6E17E");'
                 ></div>
                 <div>
-                  <p class="text-white text-base font-medium leading-normal">Web Development</p>
-                  <p class="text-[#a2abb3] text-sm font-normal leading-normal">
+                  <h2 class="text-base font-medium leading-normal pb-3">Web Development</h2>
+                  <p class="text-sm font-normal leading-normal">
                     Custom websites and web applications built with modern technologies and best practices. Includes responsive design, SEO optimization, performance focus, and
                     modern frameworks.
                   </p>
                 </div>
               </div>
-              <div class="flex flex-col gap-3 pb-3">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAWDCo7saevv1CDH5XtR3q0-kFE6KqYqfoh4kLqBlPh0y0wg3mzGwkE3R0Nr1SzqyabZXpwpOup9tTGxfz-udiIxw7tFh8x2rLb6Q9KQ7cWlYfQ_lcNadQR8oB19_KMU6L1Fvm8Zy9_uQnrL1xmZ2HwLgx65oEUdS9YS_2y5buBgSQ24AJuTn4N_bvn6aVfmTugMZqD5sr_VMCUcvR6XoeGgD6xeM-Ho-pvSfvdtOYpGOYUNAq3TrbH_3MoJXQpdnHR0QhzJhiY0jM");'
-                ></div>
-                <div>
-                  <p class="text-white text-base font-medium leading-normal">Mobile Apps</p>
-                  <p class="text-[#a2abb3] text-sm font-normal leading-normal">
-                    Native and cross-platform mobile applications for iOS and Android. Features intuitive UI/UX, robust functionality, and seamless integration with existing
-                    systems.
-                  </p>
-                </div>
-              </div>
-              <div class="flex flex-col gap-3 pb-3">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCph2lnzcEn05N8fuerz27D-uaO5KLoW7LK_9Qoj8lMEVAAYsJfbGJbGi2LtgfP2tGtwAkX5urlMChwXSbwq-_1IJjOsJ1qCZSw2AsMQ0pobvtmCDp4Ilhhfqqdk4MBau0nw-fWvZL7E-ETZFdlwsIjowbLAuFvxT-xBdGpypUOc0F-Kh6tth5ghIsXstOOh75WVc08V5y_dMxpau25RBLoFNapcUzqWuEe56Vfhko67Iblab0QLEzpZsOSDKco7n-IonTG1xeDD2g");'
-                ></div>
-                <div>
-                  <p class="text-white text-base font-medium leading-normal">Desktop Apps</p>
-                  <p class="text-[#a2abb3] text-sm font-normal leading-normal">
-                    Cross-platform desktop applications tailored to your business needs. Includes user-friendly interfaces, efficient performance, and compatibility with multiple
-                    operating systems.
-                  </p>
-                </div>
-              </div>
-              <div class="flex flex-col gap-3 pb-3">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC7l-IHMuSEPxqs2tL4mpmabRR--59kwQZLkfL2tCMaofm33ob5JwijTfprBOsFunYmzL6g4wWaU80MJqjaf2vHYvP-ohJ4T7iGGmZaYYoOjUNA0P2S7Od1pJtamfkk9_IBSgcan-o7CMkC_u5JKdcXsb0XGxvkACPZ0GUBQxwAwP56CThQkC5S7K0uNAlkDDrrvyO86fQzVQRbbrnzYqYibKTY4E_5oaMbtsIwKRN9b4oqKvbBsGCz4ZxWWBKJ5rf_uUuA2UGw3k0");'
-                ></div>
-                <div>
-                  <p class="text-white text-base font-medium leading-normal">Game Development</p>
-                  <p class="text-[#a2abb3] text-sm font-normal leading-normal">
-                    Engaging and immersive games for various platforms, from mobile to PC. Focus on captivating gameplay, stunning visuals, and optimized performance.
-                  </p>
-                </div>
-              </div>
-              <div class="flex flex-col gap-3 pb-3">
+              <div class="flex flex-col gap-3 pb-3 rounded-lg border p-4 specialty-item">
                 <div
                   class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
                   style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDzNq6yId0MNdoiOP85Ot-rspEO1dtAzhjjC6Oof7CxYouU8jtZu_ZvaXeriOiizpEn80E7Rls89-DqLVJ3tdpHaGa0EyI6CJLQesbp8_GmNJqVmm_91y-G8AS3eNZzVPHfLub3LbY6ZJmOMomCt6ZJjrUQ76FPVuTYezBQT2cNAUnxu44-ZQqNTeRUSxFEFwSNU6xH3l1ocL9fx_WtXK5arL5nnZHd1veVLcgzYUthmgklCs8YwvgWSSZi-qELyxmw-xL7AKhqV6o");'
                 ></div>
                 <div>
-                  <p class="text-white text-base font-medium leading-normal">UI/UX Design</p>
-                  <p class="text-[#a2abb3] text-sm font-normal leading-normal">
+                  <h2 class="text-base font-medium leading-normal pb-3">Mobile Apps</h2>
+                  <p class="text-sm font-normal leading-normal">
+                    Native and cross-platform mobile applications for iOS and Android. Features intuitive UI/UX, robust functionality, and seamless integration with existing
+                    systems.
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3 rounded-lg border p-4 specialty-item">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCph2lnzcEn05N8fuerz27D-uaO5KLoW7LK_9Qoj8lMEVAAYsJfbGJbGi2LtgfP2tGtwAkX5urlMChwXSbwq-_1IJjOsJ1qCZSw2AsMQ0pobvtmCDp4Ilhhfqqdk4MBau0nw-fWvZL7E-ETZFdlwsIjowbLAuFvxT-xBdGpypUOc0F-Kh6tth5ghIsXstOOh75WVc08V5y_dMxpau25RBLoFNapcUzqWuEe56Vfhko67Iblab0QLEzpZsOSDKco7n-IonTG1xeDD2g");'
+                ></div>
+                <div>
+                  <h2 class="text-base font-medium leading-normal pb-3">Desktop Apps</h2>
+                  <p class="text-sm font-normal leading-normal">
+                    Cross-platform desktop applications tailored to your business needs. Includes user-friendly interfaces, efficient performance, and compatibility with multiple
+                    operating systems.
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3 rounded-lg border p-4 specialty-item">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuC7l-IHMuSEPxqs2tL4mpmabRR--59kwQZLkfL2tCMaofm33ob5JwijTfprBOsFunYmzL6g4wWaU80MJqjaf2vHYvP-ohJ4T7iGGmZaYYoOjUNA0P2S7Od1pJtamfkk9_IBSgcan-o7CMkC_u5JKdcXsb0XGxvkACPZ0GUBQxwAwP56CThQkC5S7K0uNAlkDDrrvyO86fQzVQRbbrnzYqYibKTY4E_5oaMbtsIwKRN9b4oqKvbBsGCz4ZxWWBKJ5rf_uUuA2UGw3k0");'
+                ></div>
+                <div>
+                  <h2 class="text-base font-medium leading-normal pb-3">Game Development</h2>
+                  <p class="text-sm font-normal leading-normal">
+                    Engaging and immersive games for various platforms, from mobile to PC. Focus on captivating gameplay, stunning visuals, and optimized performance.
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3 rounded-lg border p-4 specialty-item">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDzNq6yId0MNdoiOP85Ot-rspEO1dtAzhjjC6Oof7CxYouU8jtZu_ZvaXeriOiizpEn80E7Rls89-DqLVJ3tdpHaGa0EyI6CJLQesbp8_GmNJqVmm_91y-G8AS3eNZzVPHfLub3LbY6ZJmOMomCt6ZJjrUQ76FPVuTYezBQT2cNAUnxu44-ZQqNTeRUSxFEFwSNU6xH3l1ocL9fx_WtXK5arL5nnZHd1veVLcgzYUthmgklCs8YwvgWSSZi-qELyxmw-xL7AKhqV6o");'
+                ></div>
+                <div>
+                  <h2 class="text-base font-medium leading-normal pb-3">UI/UX Design</h2>
+                  <p class="text-sm font-normal leading-normal">
                     User-centered design solutions that enhance user experience and drive engagement. Includes wireframing, prototyping, user testing, and visual design.
                   </p>
                 </div>
               </div>
-              <div class="flex flex-col gap-3 pb-3">
+              <div class="flex flex-col gap-3 pb-3 rounded-lg border p-4 specialty-item">
                 <div
                   class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCNMNYNBMeKWvQXO3KFkx0Ox2GF2oUKGZruNz99K-q7UcS_PxTI_7kdkHbt-6q7gn88lT9QCU4PHKBm51NdksefoccrezGjECyAsH62UnfhBt_1OROg9ZU80jKR3MXqFz-RO7aVUkkgquzki8Dh0I-cyrJZcu01PpmIW8s5klIAH4mammNSemFHA9D1EAu_Xrk0ToKjOGg-wgZzdbJ1zELyDTTQWTTT5_zdPquq1f3BHKDNTrjmOWhpabevO5p7dG7YHMwzXD4lLxg");'
+                  style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCNMNYNBMeKWvQXO3KFkx0Ox2GF2oUKGZruNz99K-q7UcS_PxTI_7kdkHbt-6q7gn88lT9QCU4PHKBm51NdksefoccrezGjECyAsH62UnfhBt_1OROg9ZU80jKR3MXqFz-RO7aVUkkgquzki8Dh0I-cyrJZcu01PpmIW8s5klIAH4mammNSemFHA9D1EAu_Xrk0ToKjOGg-wgZzdbJ1zELyDTTQWTTT5_zdPquq1f3BHKDNTrjmOWhpabevO5p7dG7YHMwzXD4lLxg");'
                 ></div>
                 <div>
-                  <p class="text-white text-base font-medium leading-normal">Graphic Design</p>
-                  <p class="text-[#a2abb3] text-sm font-normal leading-normal">
+                  <h2 class="text-base font-medium leading-normal pb-3">Graphic Design</h2>
+                  <p class="text-sm font-normal leading-normal">
                     Visually appealing graphics and branding materials that communicate your message effectively. Includes logo design, brand guidelines, marketing collateral, and
                     illustrations.
                   </p>
